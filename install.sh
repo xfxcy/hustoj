@@ -15,12 +15,9 @@ if [ "$IN_SCREEN" == "no" ] ;then
         chmod +x $0
         screen bash $0 $*
 else
-        echo "in screen";
-        OSID=`lsb_release -is | tr 'UDC' 'udc'`
-        OSRS=`lsb_release -rs`
-        INSTALL="install-$OSID$OSRS.sh"
-        URL="https://raw.githubusercontent.com/xfxcy/hustoj/refs/heads/master/install-ubuntu22.04.sh"
-        wget -O "$INSTALL" "$URL"
+        echo "in screen"
+        INSTALL="install-ubuntu22.04.sh"
+        wget https://raw.githubusercontent.com/xfxcy/hustoj/master/install-ubuntu22.04.sh
         chmod +x "$INSTALL"
 
         
