@@ -224,7 +224,5 @@ else
         sed -i 's|/usr/include/c++/9|/usr/include/c++/11|g' Dockerfile
         bash docker.sh
 fi
-clear
-reset
 
 echo "xfxcy nb"
