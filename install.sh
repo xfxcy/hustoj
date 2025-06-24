@@ -50,6 +50,4 @@ cd /home/judge/src/web/
 wget https://github.com/xfxcy/hustoj/raw/refs/heads/master/hello.tar.gz
 tar xzf hello.tar.gz
 chown www-data -R hello
-clear
-reset
 echo "xfxcy nb"
