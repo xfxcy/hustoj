@@ -19,7 +19,7 @@ else
         OSID=`lsb_release -is | tr 'UDC' 'udc'`
         OSRS=`lsb_release -rs`
         INSTALL="install-$OSID$OSRS.sh"
-        URL="https://github.com/xfxcy/hustoj/blob/master/install-ubuntu22.04.sh"
+        URL="https://raw.githubusercontent.com/xfxcy/hustoj/refs/heads/master/install-ubuntu22.04.sh"
         wget -O "$INSTALL" "$URL"
         chmod +x "$INSTALL"
 
