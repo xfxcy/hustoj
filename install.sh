@@ -43,8 +43,4 @@ USER=`cat $config|grep 'OJ_USER_NAME' |awk -F= '{print $2}'`
 PASSWORD=`cat $config|grep 'OJ_PASSWORD' |awk -F= '{print $2}'`
 DATABASE=`cat $config|grep 'OJ_DB_NAME' |awk -F= '{print $2}'`
 PORT=`cat $config|grep 'OJ_PORT_NUMBER' |awk -F= '{print $2}'`
-cd /home/judge/src/web/
-wget https://github.com/xfxcy/hustoj/raw/refs/heads/master/hello.tar.gz
-tar xzf hello.tar.gz
-chown www-data -R hello
 echo "xfxcy nb"
